@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RavdomFun.com</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f9;
+        color: #333;
+      }
+      header {
+        color: aliceblue;
+        background-color: #000;
+        padding: 10px;
+        text-align: center;
+        font-size: 1.5rem;
+      }
+      main {
+        padding: 20px;
+      }
+      hr {
+        border: 1px solid #ddd;
+        margin: 20px 0;
+      }
+      label {
+        font-weight: bold;
+      }
+      input[type="range"] {
+        width: 100%;
+      }
+      ul {
+        padding-left: 20px;
+      }
+      form {
+        margin-bottom: 20px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+      th,
+      td {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: left;
+      }
+      footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #333;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>RavdomFun.com</header>
+      <hr />
+      <input type="checkbox" id="age" />
+      <label for="age">Do you want to have some fun?</label>
+      <hr />
+
+      <label for="height"></label>
+      <input
+        type="range"
+        id="height"
+        name="height"
+        min="10"
+        max="100"
+        value="50"
+      />
+      <hr />
+
+      <h1>The sky was cloudy 🌥 & it will 🌧 today</h1>
+      <hr />
+
+      <ul>
+        <li>Mon: ☀️ Sunny</li>
+        <li>Tue: ☀️ Sunny</li>
+        <li>Wed: ☀️ Sunny</li>
+        <li>Thu: ☀️ Sunny</li>
+        <li>Fri: ☔ Rainy</li>
+        <li>Sat: ☁️ Cloudy</li>
+        <li>Sun: ☁️ Cloudy</li>
+      </ul>
+      <hr />
+
+      <h1>You can learn coding in Apna College. Here is the link:</h1>
+      <a
+        href="https://www.apnacollege.in/home-post-login"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Apna College</a
+      >
+      <hr />
+
+      <h1>Fun</h1>
+      <a href="https://elgoog.im/" target="_blank" rel="noopener noreferrer"
+        >Elgoog</a
+      >
+      <hr />
+      <table border="black">
+        <caption>
+          🍽️ Food Menu
+        </caption>
+        <thead>
+          <tr>
+            <th rowspan="2">item</th>
+            <th colspan="2">price</th>
+          </tr>
+          <tr>
+            <th>INR</th>
+            <th>USD</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>🥭Frooti</td>
+            <td>10</td>
+            <td>0.14</td>
+          </tr>
+          <tr>
+            <td>🥟Samosa</td>
+            <td>12</td>
+            <td>0.17</td>
+          </tr>
+          <tr>
+            <td>🍟Chips</td>
+            <td>20</td>
+            <td>0.28</td>
+          </tr>
+          <hr />
+          <table border="black">
+            <caption>
+              A test table with merged cells
+            </caption>
+            <tr>
+              <td rowspan="2"></td>
+              <td colspan="2">Average</td>
+              <td rowspan="2">Red eyes</td>
+            </tr>
+            <tr>
+              <td>Height</td>
+              <td>Weight</td>
+            </tr>
+            <tr>
+              <td>Males</td>
+              <td>1.9</td>
+              <td>0.003</td>
+              <td>40%</td>
+            </tr>
+            <tr>
+              <td>Females</td>
+              <td>1.7</td>
+              <td>0.002</td>
+              <td>43%</td>
+            </tr>
+          </table>
+        </tbody>
+      </table>
+      <hr />
+      <h3>Form</h3>
+      <form>
+        <label for="name">Name:</label>
+        <input /> <br /><br /><br />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <br /><br /><br />
+
+        <br /><br /><br />
+        <label for="Password">Password:</label>
+        <input type="Password" id="Password" name="Password" required />
+        <br /><br /><br />
+        <input type="submit" value="Submit" />
+        <br /><br /><br />
+      </form>
+      <hr />
+      <form>
+        <label for="question1">Choose your favorite color:</label>
+        <input type="radio" id="red" name="color" value="red" required />
+        <label for="red">Red</label>
+        <input type="radio" id="blue" name="color" value="blue" required />
+        <label for="blue">Blue</label>
+        <input type="radio" id="green" name="color" value="green" required />
+        <label for="green">Green</label>
+        <input type="radio" id="yellow" name="color" value="yellow" required />
+        <label for="yellow">Yellow</label>
+        <br /><br /><br />
+        <label for="question2">What is your favorite type of music:</label>
+        <select id="question2" name="music">
+          <option value="none">None</option>
+          <option value="classical">Classical</option>
+          <option value="rock">Rock</option>
+          <option value="pop">Pop</option>
+          <option value="hip-hop">Hip-Hop</option>
+          <option value="jazz">Jazz</option>
+        </select>
+        <br /><br /><br />
+        <label for="question3">How many siblings do you have:</label>
+        <input type="number" id="siblings" name="siblings" min="0" required />
+        <br /><br /><br />
+        <label for="question4">What is your favorite sport:</label>
+        <input type="text" id="sport" name="sport" />
+        <br /><br /><br />
+        <label for="question5">What is your favorite color:</label>
+        <input type="color" id="color" name="favoriteColor" />
+        <br /><br /><br />
+        <label for="question6">What is your favorite food:</label>
+        <input type="text" id="food" name="food" />
+        <br /><br /><br />
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required />
+        <label for="female">Female</label>
+        <br /><br /><br />
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required />
+        <br /><br /><br />
+        <label for="countries">Choose a country:</label>
+        <select id="countries" name="countries">
+          <option value="afghanistan">Afghanistan</option>
+          <option value="albania">Albania</option>
+          <option value="algeria">Algeria</option>
+          <option value="andorra">Andorra</option>
+          <option value="angola">Angola</option>
+          <option value="argentina">Argentina</option>
+          <option value="armenia">Armenia</option>
+          <option value="australia">Australia</option>
+          <option value="austria">Austria</option>
+          <option value="azerbaijan">Azerbaijan</option>
+          <option value="bahamas">Bahamas</option>
+          <option value="bahrain">Bahrain</option>
+          <option value="bangladesh">Bangladesh</option>
+          <option value="barbados">Barbados</option>
+          <option value="belarus">Belarus</option>
+          <option value="belgium">Belgium</option>
+          <option value="belize">Belize</option>
+          <option value="benin">Benin</option>
+          <option value="bhutan">Bhutan</option>
+          <option value="bolivia">Bolivia</option>
+          <option value="bosnia">Bosnia and Herzegovina</option>
+          <option value="botswana">Botswana</option>
+          <option value="brazil">Brazil</option>
+          <option value="brunei">Brunei</option>
+          <option value="bulgaria">Bulgaria</option>
+          <option value="burkina_faso">Burkina Faso</option>
+          <option value="burundi">Burundi</option>
+          <option value="cabo_verde">Cabo Verde</option>
+          <option value="cambodia">Cambodia</option>
+          <option value="cameroon">Cameroon</option>
+          <option value="canada">Canada</option>
+          <option value="central_african_republic">
+            Central African Republic
+          </option>
+          <option value="chad">Chad</option>
+          <option value="chile">Chile</option>
+          <option value="china">China</option>
+          <option value="colombia">Colombia</option>
+          <option value="comoros">Comoros</option>
+          <option value="congo">Congo</option>
+          <option value="costa_rica">Costa Rica</option>
+          <option value="croatia">Croatia</option>
+          <option value="cuba">Cuba</option>
+          <option value="cyprus">Cyprus</option>
+          <option value="czechia">Czechia</option>
+          <option value="denmark">Denmark</option>
+          <option value="djibouti">Djibouti</option>
+          <option value="dominica">Dominica</option>
+          <option value="dominican_republic">Dominican Republic</option>
+          <option value="ecuador">Ecuador</option>
+          <option value="egypt">Egypt</option>
+          <option value="el_salvador">El Salvador</option>
+          <option value="equatorial_guinea">Equatorial Guinea</option>
+          <option value="eritrea">Eritrea</option>
+          <option value="estonia">Estonia</option>
+          <option value="eswatini">Eswatini</option>
+          <option value="ethiopia">Ethiopia</option>
+          <option value="fiji">Fiji</option>
+          <option value="finland">Finland</option>
+          <option value="france">France</option>
+          <option value="gabon">Gabon</option>
+          <option value="gambia">Gambia</option>
+          <option value="georgia">Georgia</option>
+          <option value="germany">Germany</option>
+          <option value="ghana">Ghana</option>
+          <option value="greece">Greece</option>
+          <option value="grenada">Grenada</option>
+          <option value="guatemala">Guatemala</option>
+          <option value="guinea">Guinea</option>
+          <option value="guinea_bissau">Guinea-Bissau</option>
+          <option value="guyana">Guyana</option>
+          <option value="haiti">Haiti</option>
+          <option value="honduras">Honduras</option>
+          <option value="hungary">Hungary</option>
+          <option value="iceland">Iceland</option>
+          <option value="india">India</option>
+          <option value="indonesia">Indonesia</option>
+          <option value="iran">Iran</option>
+          <option value="iraq">Iraq</option>
+          <option value="ireland">Ireland</option>
+          <option value="israel">Israel</option>
+          <option value="italy">Italy</option>
+          <option value="jamaica">Jamaica</option>
+          <option value="japan">Japan</option>
+          <option value="jordan">Jordan</option>
+          <option value="kazakhstan">Kazakhstan</option>
+          <option value="kenya">Kenya</option>
+          <option value="kiribati">Kiribati</option>
+          <option value="korea_north">Korea (North)</option>
+          <option value="korea_south">Korea (South)</option>
+          <option value="kosovo">Kosovo</option>
+          <option value="kuwait">Kuwait</option>
+          <option value="kyrgyzstan">Kyrgyzstan</option>
+          <option value="laos">Laos</option>
+          <option value="latvia">Latvia</option>
+          <option value="lebanon">Lebanon</option>
+          <option value="lesotho">Lesotho</option>
+          <option value="liberia">Liberia</option>
+          <option value="libya">Libya</option>
+          <option value="liechtenstein">Liechtenstein</option>
+          <option value="lithuania">Lithuania</option>
+          <option value="luxembourg">Luxembourg</option>
+          <option value="madagascar">Madagascar</option>
+          <option value="malawi">Malawi</option>
+          <option value="malaysia">Malaysia</option>
+          <option value="maldives">Maldives</option>
+          <option value="mali">Mali</option>
+          <option value="malta">Malta</option>
+          <option value="marshall_islands">Marshall Islands</option>
+          <option value="mauritania">Mauritania</option>
+          <option value="mauritius">Mauritius</option>
+          <option value="mexico">Mexico</option>
+          <option value="micronesia">Micronesia</option>
+          <option value="moldova">Moldova</option>
+          <option value="monaco">Monaco</option>
+          <option value="mongolia">Mongolia</option>
+          <option value="montenegro">Montenegro</option>
+          <option value="morocco">Morocco</option>
+          <option value="mozambique">Mozambique</option>
+          <option value="myanmar">Myanmar</option>
+          <option value="namibia">Namibia</option>
+          <option value="nauru">Nauru</option>
+          <option value="nepal">Nepal</option>
+          <option value="netherlands">Netherlands</option>
+          <option value="new_zealand">New Zealand</option>
+          <option value="nicaragua">Nicaragua</option>
+          <option value="niger">Niger</option>
+          <option value="nigeria">Nigeria</option>
+          <option value="north_macedonia">North Macedonia</option>
+          <option value="norway">Norway</option>
+          <option value="oman">Oman</option>
+          <option value="pakistan">Pakistan</option>
+          <option value="palau">Palau</option>
+          <option value="panama">Panama</option>
+          <option value="papua_new_guinea">Papua New Guinea</option>
+          <option value="paraguay">Paraguay</option>
+          <option value="peru">Peru</option>
+          <option value="philippines">Philippines</option>
+          <option value="poland">Poland</option>
+          <option value="portugal">Portugal</option>
+          <option value="qatar">Qatar</option>
+          <option value="romania">Romania</option>
+          <option value="russia">Russia</option>
+          <option value="rwanda">Rwanda</option>
+          <option value="saint_kitts_and_nevis">Saint Kitts and Nevis</option>
+          <option value="saint_lucia">Saint Lucia</option>
+          <option value="saint_vincent">
+            Saint Vincent and the Grenadines
+          </option>
+          <option value="samoa">Samoa</option>
+          <option value="san_marino">San Marino</option>
+          <option value="sao_tome_and_principe">Sao Tome and Principe</option>
+          <option value="saudi_arabia">Saudi Arabia</option>
+          <option value="senegal">Senegal</option>
+          <option value="serbia">Serbia</option>
+          <option value="seychelles">Seychelles</option>
+          <option value="sierra_leone">Sierra Leone</option>
+          <option value="singapore">Singapore</option>
+          <option value="slovakia">Slovakia</option>
+          <option value="slovenia">Slovenia</option>
+          <option value="solomon_islands">Solomon Islands</option>
+          <option value="somalia">Somalia</option>
+          <option value="south_africa">South Africa</option>
+          <option value="south_sudan">South Sudan</option>
+          <option value="spain">Spain</option>
+          <option value="sri_lanka">Sri Lanka</option>
+          <option value="sudan">Sudan</option>
+          <option value="suriname">Suriname</option>
+          <option value="sweden">Sweden</option>
+          <option value="switzerland">Switzerland</option>
+          <option value="syria">Syria</option>
+          <option value="taiwan">Taiwan</option>
+          <option value="tajikistan">Tajikistan</option>
+          <option value="tanzania">Tanzania</option>
+          <option value="thailand">Thailand</option>
+          <option value="timor_leste">Timor-Leste</option>
+          <option value="togo">Togo</option>
+          <option value="tonga">Tonga</option>
+          <option value="trinidad_and_tobago">Trinidad and Tobago</option>
+          <option value="tunisia">Tunisia</option>
+          <option value="turkey">Turkey</option>
+          <option value="turkmenistan">Turkmenistan</option>
+          <option value="tuvalu">Tuvalu</option>
+          <option value="uganda">Uganda</option>
+          <option value="ukraine">Ukraine</option>
+          <option value="united_arab_emirates">United Arab Emirates</option>
+          <option value="united_kingdom">United Kingdom</option>
+          <option value="united_states">United States</option>
+          <option value="uruguay">Uruguay</option>
+          <option value="uzbekistan">Uzbekistan</option>
+          <option value="vanuatu">Vanuatu</option>
+          <option value="vatican">Vatican City</option>
+          <option value="venezuela">Venezuela</option>
+          <option value="vietnam">Vietnam</option>
+          <option value="yemen">Yemen</option>
+          <option value="zambia">Zambia</option>
+          <option value="zimbabwe">Zimbabwe</option>
+        </select>
+        <br /><br />
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="5" cols="30"></textarea>
+        <br /><br /><br />
+        <input type="submit" value="Submit" />
+        <br /><br /><br />
+        <input type="reset" value="Reset" />
+        <br /><br /><br />
+      </form>
+      <hr />
+      <form>
+        <input
+          type="volume"
+          id="volume"
+          name="volume"
+          readonly
+          value="0.5"
+          min="0"
+          max="1"
+          step="0.01"
+          style="width: 100px"
+        />
+        <label for="volume"></label>
+        <input
+          type="range"
+          id="volume"
+          name="volumes"
+          min="100"
+          max="200"
+          value="150"
+          oninput="volume.value = height.value / 100"
+          style="width: 100%"
+        />
+        <br /><br /><br />
+        <input type="submit" name="submit" id="submit" />
+        <br /><br /><br />
+        <label for="feedback">feedback</label>
+        <textarea
+          id="feedback"
+          name="feedback"
+          rows="100"
+          cols="100"
+        ></textarea>
+      </form>
+      <hr />
+      <h3>registration form</h3>
+      <form>
+        <label for="first name">first name</label>
+        <input type="text" id="first name" name="first name" required />
+        <br /><br />
+        <label for="last name">last name</label>
+        <input type="text" id="last name" name="last name" required />
+
+        <label for="dropdown">please select a gender:</label>
+        <select id="dropdown" name="dropdown" required>
+          <option value="">Select gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+        <br /><br />
+        <label for="service">do you agree to all types of service:</label>
+        <input type="checkbox" id="service" name="service" required />
+        <br /><br />
+        <input type="submit" value="register" />
+        <br /><br />
+        <input type="reset" value="Reset" />
+        <br /><br />
+        <label for="color">favorite Color:</label>
+        <input type="color" id="color" name="color" required />
+      </form>
+    </main>
+
+    <footer>&copy; 2022 My Website</footer>
+  </body>
+</html>
